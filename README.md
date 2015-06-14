@@ -7,7 +7,7 @@ JST-XH headers. Edited 4.10.15 dmf
 2 pin, 3 pin, 4 pin all should be OK
 
 Original version (wrong hole sizes) from this fellow: 
-"This libary is for adding JST-XH headers to you're project. It has pins 3-7. This is usefull for ballance connectors on lithium polymer batteries from 2-6 cells. The pin spacing was based on the datasheet that can be found here http://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
+"This libary is for adding JST-XH headers to you're project. It has pins 3-7. This is usefull for ballance connectors on lithium polymer batteries from 2-6 cells. The pin spacing was based on the datasheet that can be found here http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" http://www.rcgroups.com/forums/showthread.php?t=2304597
 
 Corrected for XH 2/3/4 pin 
 dmf 4.10.15 
