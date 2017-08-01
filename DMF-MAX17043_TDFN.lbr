@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -47,7 +47,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -60,75 +60,79 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>Parts I've edited and added. 3.22.15+</description>
+<description>MAX17043 TDFN-EP package &lt;br&gt;
+Not tested yet.</description>
 <packages>
-<package name="DMF-135-2">
-<description>Weidmuller 1715010000 &lt;br&gt;
-&lt;b&gt;LM 3.50/135/2&lt;/b&gt; &lt;br&gt;&lt;br&gt;
-
-Screw - Clamping Yoke, Tension Sleeve&lt;br&gt;
-14-22 AWG&lt;p&gt;
-3.5 mm pin spacing. Pins have a rectangular profile, 1.1 x 0.75mm. The drill hole diameter for the original version was too large. Corrected drill size to 1.30mm on 4.22.15.</description>
-<wire x1="3.5" y1="-5.675" x2="3.5" y2="-5.65" width="0.2032" layer="21"/>
-<wire x1="3.5" y1="-5.65" x2="3.5" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="3.5" y1="1.3" x2="3.5" y2="5.65" width="0.2032" layer="21"/>
-<wire x1="-3.5" y1="5.65" x2="-3.5" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="-3.5" y1="1.3" x2="-3.5" y2="-5.675" width="0.2032" layer="21"/>
-<wire x1="-3.5" y1="-5.675" x2="3.5" y2="-5.675" width="0.2032" layer="21"/>
-<wire x1="-3.5" y1="5.65" x2="3.5" y2="5.65" width="0.2032" layer="21"/>
-<pad name="1" x="-1.75" y="0" drill="1.3" shape="long" rot="R90"/>
-<pad name="2" x="1.75" y="0" drill="1.3" shape="long" rot="R90"/>
-<wire x1="-3.5" y1="-6.8" x2="3.5" y2="-6.8" width="0.127" layer="21"/>
-<wire x1="3.5" y1="-6.8" x2="3.5" y2="-5.65" width="0.127" layer="21"/>
-<wire x1="3.5" y1="-5.65" x2="-3.5" y2="-5.65" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-5.65" x2="-3.5" y2="-5.7" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-5.7" x2="-3.5" y2="-6.8" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="5.65" x2="-4.1" y2="5.65" width="0.127" layer="21"/>
-<wire x1="-4.1" y1="5.65" x2="-4.1" y2="-5.7" width="0.127" layer="21"/>
-<wire x1="-4.1" y1="-5.7" x2="-3.5" y2="-5.7" width="0.127" layer="21"/>
-<wire x1="0" y1="5.6" x2="0" y2="1.3" width="0.127" layer="21"/>
-<wire x1="0" y1="1.3" x2="-3.5" y2="1.3" width="0.127" layer="21"/>
-<wire x1="0" y1="1.3" x2="3.5" y2="1.3" width="0.127" layer="21"/>
-<wire x1="-3.2" y1="1.45" x2="-0.2" y2="1.45" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="1.45" x2="-0.2" y2="5.45" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="5.45" x2="-3.2" y2="5.45" width="0.127" layer="21"/>
-<wire x1="-3.2" y1="5.45" x2="-3.2" y2="1.45" width="0.127" layer="21"/>
-<wire x1="0.2" y1="1.45" x2="3.2" y2="1.45" width="0.127" layer="21"/>
-<wire x1="3.2" y1="1.45" x2="3.2" y2="5.45" width="0.127" layer="21"/>
-<wire x1="3.2" y1="5.45" x2="0.2" y2="5.45" width="0.127" layer="21"/>
-<wire x1="0.2" y1="5.45" x2="0.2" y2="1.45" width="0.127" layer="21"/>
-<circle x="-1.75" y="-6.25" radius="0.5099" width="0.127" layer="21"/>
-<circle x="1.75" y="-6.25" radius="0.5099" width="0.127" layer="21"/>
-<text x="-3.155" y="-5.4" size="0.6096" layer="21" ratio="5">screw clamps</text>
+<package name="TDFN">
+<description>TDFN-EP package, with extended pads.
+&lt;p&gt;
+The MAX17043 does not need thermal vias. The package has the EP, but it's not used for thermal dissipation as far as I can tell.</description>
+<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.06" layer="51"/>
+<wire x1="1" y1="1.5" x2="1" y2="-1.5" width="0.06" layer="51"/>
+<wire x1="-1" y1="-1.5" x2="-1" y2="1.5" width="0.06" layer="51"/>
+<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.06" layer="51"/>
+<smd name="1" x="-0.75" y="-1.6" dx="1" dy="0.3" layer="1" rot="R270"/>
+<smd name="2" x="-0.25" y="-1.6" dx="1" dy="0.3" layer="1" rot="R270"/>
+<smd name="3" x="0.25" y="-1.6" dx="1" dy="0.3" layer="1" rot="R270"/>
+<smd name="4" x="0.75" y="-1.6" dx="1" dy="0.3" layer="1" rot="R270"/>
+<smd name="7" x="-0.25" y="1.6" dx="1" dy="0.3" layer="1" rot="R270"/>
+<smd name="6" x="0.25" y="1.6" dx="1" dy="0.3" layer="1" rot="R270"/>
+<smd name="5" x="0.75" y="1.6" dx="1" dy="0.3" layer="1" rot="R270"/>
+<smd name="8" x="-0.75" y="1.6" dx="1" dy="0.3" layer="1" rot="R270"/>
+<smd name="EP" x="0" y="0" dx="1.75" dy="1.63" layer="1" cream="no"/>
+<circle x="-1.2" y="-1.7" radius="0.111803125" width="0.127" layer="21"/>
+<text x="-1.3208" y="-1.27" size="0.508" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
+<text x="1.651" y="-1.27" size="0.508" layer="27" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.5" y1="-0.5" x2="0.5" y2="0.5" layer="31"/>
+<rectangle x1="0.125" y1="1.1" x2="0.375" y2="1.5" layer="51"/>
+<rectangle x1="-0.375" y1="1.1" x2="-0.125" y2="1.5" layer="51"/>
+<rectangle x1="-0.875" y1="1.1" x2="-0.625" y2="1.5" layer="51"/>
+<rectangle x1="0.625" y1="1.1" x2="0.875" y2="1.5" layer="51"/>
+<rectangle x1="0.625" y1="-1.5" x2="0.875" y2="-1.1" layer="51"/>
+<rectangle x1="0.125" y1="-1.5" x2="0.375" y2="-1.1" layer="51"/>
+<rectangle x1="-0.375" y1="-1.5" x2="-0.125" y2="-1.1" layer="51"/>
+<rectangle x1="-0.875" y1="-1.5" x2="-0.625" y2="-1.1" layer="51"/>
 </package>
 </packages>
 <symbols>
-<symbol name="MALE-2">
-<text x="0" y="1.778" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-5.842" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="1.27" y2="0.254" layer="94"/>
-<rectangle x1="-0.254" y1="-2.794" x2="1.27" y2="-2.286" layer="94"/>
-<pin name="1" x="-2.54" y="0" visible="pin" length="short" direction="pas"/>
-<pin name="2" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas"/>
+<symbol name="MAX17043">
+<description>MAX17043&lt;br&gt; 
+
+Compact, Low-Cost 1S/2S Fuel Gauges with Low-Battery Alert</description>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="CTG" x="-12.7" y="5.08" length="middle"/>
+<pin name="CELL" x="-12.7" y="2.54" length="middle"/>
+<pin name="VDD" x="-12.7" y="0" length="middle"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
+<pin name="SDA" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="QSTRT" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="!ALRT" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<text x="-7.62" y="9.144" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.922" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="3.5MM_2POS_135_TERMBLOCK" prefix="X">
-<description>Weidmuller 1715010000 &lt;br&gt;
-
-&lt;b&gt;LM 3.50/135/2 &lt;/b&gt;&lt;br&gt;&lt;br&gt;
-
-Screw - Clamping Yoke, Tension Sleeve&lt;br&gt;
-
-14-22 AWG</description>
+<deviceset name="MAX17043" prefix="U">
+<description>MAX17043 TDFN package with extended pads &lt;p&gt;
+Not tested yet.</description>
 <gates>
-<gate name="G$1" symbol="MALE-2" x="0" y="0"/>
+<gate name="G$1" symbol="MAX17043" x="12.7" y="-2.54"/>
 </gates>
 <devices>
-<device name="&quot;" package="DMF-135-2">
+<device name="" package="TDFN">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="!ALRT" pad="5"/>
+<connect gate="G$1" pin="CELL" pad="2"/>
+<connect gate="G$1" pin="CTG" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4 EP"/>
+<connect gate="G$1" pin="QSTRT" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="7"/>
+<connect gate="G$1" pin="SDA" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
