@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -120,8 +120,8 @@
 <hole x="1.7" y="0.1" drill="2.1"/>
 <hole x="-4.1" y="-4.6" drill="2"/>
 <hole x="-4.1" y="4.6" drill="2"/>
-<text x="-5.715" y="6.985" size="1.27" layer="21">&gt;Name</text>
-<text x="-5.715" y="-8.255" size="1.27" layer="21">&gt;Value</text>
+<text x="-4.445" y="6.985" size="0.762" layer="21" ratio="15">&gt;Name</text>
+<text x="-4.445" y="-6.985" size="0.508" layer="21">&gt;Value</text>
 </package>
 <package name="KEYSTONE970">
 <description>KEYSTONE 970 RCA Jack&lt;br&gt; 
@@ -136,7 +136,7 @@ NOTE: this is to be mounted flush to the PCB board (needs a hard push!)</descrip
 <wire x1="-15.99" y1="2.52309375" x2="-15.99" y2="-2.68969375" width="0.127" layer="51"/>
 <wire x1="-15.99" y1="-2.68969375" x2="-14.52469375" y2="-4.155" width="0.127" layer="51" curve="90"/>
 <wire x1="-14.52469375" y1="-4.155" x2="-7" y2="-4.155" width="0.127" layer="51"/>
-<text x="-6.9" y="6" size="1.27" layer="21" font="vector">&gt;Name</text>
+<text x="-6.9" y="6" size="0.762" layer="21" font="vector" ratio="15">&gt;Name</text>
 <hole x="-2.8" y="3.745" drill="1.98"/>
 <hole x="-2.8" y="-3.745" drill="1.98"/>
 <pad name="P$1" x="-2.8" y="0" drill="2.08"/>
@@ -153,8 +153,7 @@ Also, two vias to bottom layer.</description>
 <wire x1="2.35" y1="-1.7" x2="-2.35" y2="-1.7" width="0.2032" layer="21"/>
 <wire x1="-2.35" y1="-1.7" x2="-2.35" y2="1.7" width="0.2032" layer="22"/>
 <smd name="P$1" x="0" y="0" dx="4.3" dy="3" layer="1"/>
-<text x="3.048" y="-1.043" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="3.048" y="-1.678" size="0.4064" layer="25" font="vector" ratio="19">&gt;VALUE</text>
+<text x="-2.032" y="2.767" size="0.762" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <pad name="P$2" x="-1" y="0.1" drill="0.7"/>
 <pad name="P$3" x="1" y="0.1" drill="0.7"/>
 </package>
@@ -171,7 +170,7 @@ Use for M2.5 screws. &lt;br&gt; Between Normal (2.9) and Loose (3.1) fit M2.5 dr
 <circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
 <circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
 <circle x="0" y="0" radius="1.6" width="0.2032" layer="21"/>
-<text x="-0.97" y="-2.91" size="0.6096" layer="25" font="vector" ratio="13">M2.5l</text>
+<text x="-1.143" y="-2.91" size="0.762" layer="25" font="vector" ratio="15">M2.5l</text>
 <hole x="0" y="0" drill="3"/>
 </package>
 <package name="HOLE3,3">
@@ -188,7 +187,7 @@ Use for M3 screws. &lt;br&gt;Between 'Close' and 'Normal' fit hole size.</descri
 <circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
 <circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
 <hole x="0" y="0" drill="3.3"/>
-<text x="-0.58" y="-2.81" size="0.6096" layer="25" font="vector" ratio="13">M3c</text>
+<text x="-0.762" y="-2.81" size="0.762" layer="25" font="vector" ratio="15">M3c</text>
 </package>
 <package name="HOLE3,6">
 <description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center &lt;p&gt;
@@ -212,17 +211,19 @@ Pad size for a flat washer is 7.7mm. [see &lt;a href="http://www.eevblog.com/for
 <circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="21"/>
 <hole x="0" y="0" drill="3.6"/>
-<text x="-0.49" y="-2.94" size="0.6096" layer="25" font="vector" ratio="13">M3l</text>
+<text x="-0.762" y="-2.94" size="0.762" layer="25" font="vector" ratio="15">M3l</text>
 </package>
 <package name="TC33_SMDTRIMPOT">
 <smd name="P2" x="0" y="1.45" dx="1.6" dy="1.5" layer="1"/>
 <smd name="P1" x="-1.6" y="-1.8" dx="1.2" dy="1.2" layer="1"/>
 <smd name="P3" x="1.6" y="-1.8" dx="1.2" dy="1.2" layer="1"/>
+<text x="-2.54" y="3.175" size="0.762" layer="25" ratio="15">&gt;Name</text>
 </package>
 <package name="MOD22_SMDTRIMPOT">
 <smd name="P$1" x="0" y="1.45" dx="1.6" dy="1.6" layer="1"/>
 <smd name="P$2" x="-1.155" y="-1.45" dx="1.09" dy="1.6" layer="1"/>
 <smd name="P$3" x="1.155" y="-1.45" dx="1.09" dy="1.6" layer="1"/>
+<text x="-2.54" y="3.175" size="0.762" layer="25" ratio="15">&gt;Name</text>
 </package>
 </packages>
 <symbols>
